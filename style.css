@@ -8,4 +8,8 @@
 header {
     background-image: url(./vertigo/bg-mibile.svg);
     background-size: cover;
+    height: 8.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
