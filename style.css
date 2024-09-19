@@ -16,7 +16,7 @@
 }
 
 header {
-    background-image: url(./vertigo/bg-mibile.svg);
+    background-image: url(./vertigo/bg-mobile.svg);
     background-size: cover;
     height: 8.375rem;
     display: flex;
@@ -37,6 +37,12 @@ main{
     color: var(--gray-800);
     margin-bottom: 1rem;
     font-size: 1.5625rem;
+}
+
+.login button:hover{
+    background: var(--light-purple);
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .descricao p{
@@ -114,17 +120,22 @@ main{
     display: none;
 }
 
-@media(min-width: 1000px){
-    body{
+@media(min-width: 1000px) {
+    body {
         display: flex;
-        height: 100vh;     
+        height: 100vh;
     }
+
     header {
         background: none;
         justify-content: flex-start;
         margin: 2.5rem 7rem 7rem;
+
         height: fit-content;
-        align-self: flex-start;
+    }
+
+    header img {
+        width: 10rem;
     }
 
     main {
@@ -132,16 +143,30 @@ main{
         max-width: 24rem;
         padding: 0;
     }
-}
+    
+    .conteudo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.conteudo{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .bg-desktop {
+        display: block;
+        width: 100%;
+    }
 
-.bg-desktop{
-    display: block;
-    width: 100%;
+    .bg-desktop img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .descricao h1 {
+        font-size: 2.25rem;
+    }
+
+    .descricao p {
+        font-size: 1rem;
+    }
 }
