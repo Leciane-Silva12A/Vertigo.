@@ -126,6 +126,12 @@ main{
         height: fit-content;
         align-self: flex-start;
     }
+
+    main {
+        margin-inline: 7rem;
+        max-width: 24rem;
+        padding: 0;
+    }
 }
 
 .conteudo{
